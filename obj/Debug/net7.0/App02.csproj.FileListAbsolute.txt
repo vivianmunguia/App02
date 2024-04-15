@@ -1,0 +1,14 @@
+C:\Users\andy_\Documents\Cursos\ASP.NET\ASP.NET Core MVC and C# Bootcamp - Desde las Bases a Expert\App02\bin\Debug\net7.0\App02.exe
+C:\Users\andy_\Documents\Cursos\ASP.NET\ASP.NET Core MVC and C# Bootcamp - Desde las Bases a Expert\App02\bin\Debug\net7.0\App02.deps.json
+C:\Users\andy_\Documents\Cursos\ASP.NET\ASP.NET Core MVC and C# Bootcamp - Desde las Bases a Expert\App02\bin\Debug\net7.0\App02.runtimeconfig.json
+C:\Users\andy_\Documents\Cursos\ASP.NET\ASP.NET Core MVC and C# Bootcamp - Desde las Bases a Expert\App02\bin\Debug\net7.0\App02.dll
+C:\Users\andy_\Documents\Cursos\ASP.NET\ASP.NET Core MVC and C# Bootcamp - Desde las Bases a Expert\App02\bin\Debug\net7.0\App02.pdb
+C:\Users\andy_\Documents\Cursos\ASP.NET\ASP.NET Core MVC and C# Bootcamp - Desde las Bases a Expert\App02\obj\Debug\net7.0\App02.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\andy_\Documents\Cursos\ASP.NET\ASP.NET Core MVC and C# Bootcamp - Desde las Bases a Expert\App02\obj\Debug\net7.0\App02.AssemblyInfoInputs.cache
+C:\Users\andy_\Documents\Cursos\ASP.NET\ASP.NET Core MVC and C# Bootcamp - Desde las Bases a Expert\App02\obj\Debug\net7.0\App02.AssemblyInfo.cs
+C:\Users\andy_\Documents\Cursos\ASP.NET\ASP.NET Core MVC and C# Bootcamp - Desde las Bases a Expert\App02\obj\Debug\net7.0\App02.csproj.CoreCompileInputs.cache
+C:\Users\andy_\Documents\Cursos\ASP.NET\ASP.NET Core MVC and C# Bootcamp - Desde las Bases a Expert\App02\obj\Debug\net7.0\App02.dll
+C:\Users\andy_\Documents\Cursos\ASP.NET\ASP.NET Core MVC and C# Bootcamp - Desde las Bases a Expert\App02\obj\Debug\net7.0\refint\App02.dll
+C:\Users\andy_\Documents\Cursos\ASP.NET\ASP.NET Core MVC and C# Bootcamp - Desde las Bases a Expert\App02\obj\Debug\net7.0\App02.pdb
+C:\Users\andy_\Documents\Cursos\ASP.NET\ASP.NET Core MVC and C# Bootcamp - Desde las Bases a Expert\App02\obj\Debug\net7.0\App02.genruntimeconfig.cache
+C:\Users\andy_\Documents\Cursos\ASP.NET\ASP.NET Core MVC and C# Bootcamp - Desde las Bases a Expert\App02\obj\Debug\net7.0\ref\App02.dll
