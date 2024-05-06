@@ -13,6 +13,16 @@ stringList.Add("Victoria");
 //Contar elementos de una lista
 Console.WriteLine($"La lista List tiene esta cantidad de items: {stringList.Count}");
 
+//Consultar un elemento de la lista
+Console.WriteLine($"Imprime el primer elemento de la lista {stringList[0]}");
+
+//Elimina un elemento de la lista
+stringList.RemoveAt(3);
+stringList.Remove("María");
+
+//Ordenando alfabeticamente la lista
+stringList.Sort();
+
 ImprimirLista(stringList);
 
 //Crear metodo para imprimir todos los elementos de la lista
