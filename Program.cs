@@ -1,32 +1,32 @@
-﻿//Crear un stack collection
-Stack<string> miStack = new Stack<string>();
+﻿//Crecion de Queue
+Queue<string> miQueue = new Queue<string>();
 
-//Insertar elementos al stack
-miStack.Push("uno");
-miStack.Push("dos");
-miStack.Push("tres");
-miStack.Push("cuatro");
-miStack.Push("cinco");
-miStack.Push("seis");
+//Agregar elementos
+miQueue.Enqueue("uno");
+miQueue.Enqueue("dos");
+miQueue.Enqueue("tres");
+miQueue.Enqueue("cuatro");
+miQueue.Enqueue("cinco");
+miQueue.Enqueue("seis");
 
-//Imprimir los elementos del stack
-foreach (string s in miStack)
+//Utilizando un foreach
+foreach (string s in miQueue)
 {
     Console.WriteLine(s);
 }
 
-//Buscar al primero elemento
-string miPrimerElemento = miStack.Peek();
-Console.WriteLine($"Este es mi primer elemento {miPrimerElemento}");
+//Buscar el primer elemento del queue
+var miPrimerElemento = miQueue.Peek();
+Console.WriteLine($"Mi primer elemento es: {miPrimerElemento}");
 
-//Remover eliminar un elemento
-string elementoParaEliminar = miStack.Pop();
-Console.WriteLine($"Este elemento ha sido eliminado {elementoParaEliminar}");
-foreach (string s in miStack)
+//Eliminar un elemento de un queue
+string elementoParaEliminar = miQueue.Dequeue();
+Console.WriteLine($"Se eliminó el elemento: {elementoParaEliminar}");
+foreach (string s in miQueue)
 {
     Console.WriteLine(s);
 }
 
-//Buscamos elementos con Contains
-var existeElemento = miStack.Contains("tres");
-Console.WriteLine($"¿Existe el elemento en la coleccion?: {existeElemento}");
+//Utilizamos el contains para saber si ese elemento existe
+var existeElemento = miQueue.Contains("tres");
+Console.WriteLine($"¿Existe el elemento tres en la coleccion? {existeElemento}");
