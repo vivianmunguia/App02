@@ -1,52 +1,48 @@
-﻿string[] personas = { "Juan Manuel García", "Felipe", "María", "José" };
-
-//Creacion de List
-List<string> stringList = new List<string>();
-
-//Agregar data al List desde un array string[]
-stringList.AddRange(personas);
-
-//Agregar un elemento a la lista
-stringList.Add("Luis");
-stringList.Add("Victoria");
-
-//Contar elementos de una lista
-Console.WriteLine($"La lista List tiene esta cantidad de items: {stringList.Count}");
-
-//Consultar un elemento de la lista
-Console.WriteLine($"Imprime el primer elemento de la lista {stringList[0]}");
-
-//Elimina un elemento de la lista
-//stringList.RemoveAt(3);
-//stringList.Remove("María");
-
-//Ordenando alfabeticamente la lista
-stringList.Sort();
-
-ImprimirLista(stringList);
-
-//Crear metodo para imprimir todos los elementos de la lista
-void ImprimirLista(List<string> listaParaImprimir)
+﻿string[] canciones =
 {
-    foreach (var str in listaParaImprimir)
-    {
-        Console.WriteLine(str);
-    }
+    "Imagine",
+    "One",
+    "Billie Jean",
+    "Hey Jude",
+    "God Save The Queen",
+    "Born To Run",
+    "Creep",
+    "Yesterday",
+    "My Generation",
+    "Respect"
+};
+
+//Creando un LinkedList
+LinkedList<string> cancionesLinkedList = new LinkedList<string>(canciones);
+
+//Agregando elementos al inicio y al final de la lista
+cancionesLinkedList.AddFirst("Mi Primera Cancion");
+cancionesLinkedList.AddLast("Mi Ultima Cancion");
+
+//Imprimir elementos de la lista 
+foreach(string str in cancionesLinkedList)
+{
+    Console.WriteLine(str);
 }
 
-//Este metodo te permite saber si un elemento existe en la lista
-Console.WriteLine($"Existe Felipe en la lista {stringList.Contains("Felipe")}");
+//Buscando el primer y ultimo elementos de la lista
+LinkedListNode<string> primeraCancion = cancionesLinkedList.First!;
+LinkedListNode<string> ultimaCancion = cancionesLinkedList.Last!;
 
-//Buscar aquellos nombres en la lista que tengan mas de 10 caracteres
-var resultadoExists = stringList.Exists(x => x.Length > 10);
+Console.WriteLine($"Primera cancion: {primeraCancion.Value}\nUltima cancion: {ultimaCancion.Value}");
 
-Console.WriteLine($"¿Existe un nombre de mas de 10 caracteres? : {resultadoExists}");
+//Los elementos pueden ser agregados o removidos dependiendo de un item existente
+cancionesLinkedList.AddAfter(primeraCancion, "Mi Segunda Cancion");
 
-//Buscar un nombre que comience con la letra V
-var elementoConV = stringList.Find(x => x.StartsWith("V"));
-Console.WriteLine($"El nombre que comienza con la letra V es: {elementoConV}");
+Console.WriteLine("Lista de canciones con Mi Segunda Cancion");
+foreach (string str in cancionesLinkedList)
+{
+    Console.WriteLine(str);
+}
 
-//Buscar todos los nombres que comiencen con la letra J
-var elementosConJ = stringList.FindAll(x => x.StartsWith("J"));
-Console.WriteLine("Esta es la lista de nombres que comienzan con J: ");
-ImprimirLista(elementosConJ);
+//Buscar elementos utilizando el metodo Contains
+Console.WriteLine($"Buscando la cancion Imagine: {cancionesLinkedList.Contains("Imagine")}");
+
+//Acceder a la data utilizando los metodos siguientes (next) y anterior (previous)
+Console.WriteLine($"La cancion que continua despues de la primera cancion: {primeraCancion.Next!.Value}");
+Console.WriteLine($"La cancion que anterior la ultima cancion: {ultimaCancion.Previous!.Value}");
