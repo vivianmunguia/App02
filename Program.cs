@@ -1,48 +1,32 @@
-﻿string[] canciones =
+﻿//Crear un stack collection
+Stack<string> miStack = new Stack<string>();
+
+//Insertar elementos al stack
+miStack.Push("uno");
+miStack.Push("dos");
+miStack.Push("tres");
+miStack.Push("cuatro");
+miStack.Push("cinco");
+miStack.Push("seis");
+
+//Imprimir los elementos del stack
+foreach (string s in miStack)
 {
-    "Imagine",
-    "One",
-    "Billie Jean",
-    "Hey Jude",
-    "God Save The Queen",
-    "Born To Run",
-    "Creep",
-    "Yesterday",
-    "My Generation",
-    "Respect"
-};
-
-//Creando un LinkedList
-LinkedList<string> cancionesLinkedList = new LinkedList<string>(canciones);
-
-//Agregando elementos al inicio y al final de la lista
-cancionesLinkedList.AddFirst("Mi Primera Cancion");
-cancionesLinkedList.AddLast("Mi Ultima Cancion");
-
-//Imprimir elementos de la lista 
-foreach(string str in cancionesLinkedList)
-{
-    Console.WriteLine(str);
+    Console.WriteLine(s);
 }
 
-//Buscando el primer y ultimo elementos de la lista
-LinkedListNode<string> primeraCancion = cancionesLinkedList.First!;
-LinkedListNode<string> ultimaCancion = cancionesLinkedList.Last!;
+//Buscar al primero elemento
+string miPrimerElemento = miStack.Peek();
+Console.WriteLine($"Este es mi primer elemento {miPrimerElemento}");
 
-Console.WriteLine($"Primera cancion: {primeraCancion.Value}\nUltima cancion: {ultimaCancion.Value}");
-
-//Los elementos pueden ser agregados o removidos dependiendo de un item existente
-cancionesLinkedList.AddAfter(primeraCancion, "Mi Segunda Cancion");
-
-Console.WriteLine("Lista de canciones con Mi Segunda Cancion");
-foreach (string str in cancionesLinkedList)
+//Remover eliminar un elemento
+string elementoParaEliminar = miStack.Pop();
+Console.WriteLine($"Este elemento ha sido eliminado {elementoParaEliminar}");
+foreach (string s in miStack)
 {
-    Console.WriteLine(str);
+    Console.WriteLine(s);
 }
 
-//Buscar elementos utilizando el metodo Contains
-Console.WriteLine($"Buscando la cancion Imagine: {cancionesLinkedList.Contains("Imagine")}");
-
-//Acceder a la data utilizando los metodos siguientes (next) y anterior (previous)
-Console.WriteLine($"La cancion que continua despues de la primera cancion: {primeraCancion.Next!.Value}");
-Console.WriteLine($"La cancion que anterior la ultima cancion: {ultimaCancion.Previous!.Value}");
+//Buscamos elementos con Contains
+var existeElemento = miStack.Contains("tres");
+Console.WriteLine($"¿Existe el elemento en la coleccion?: {existeElemento}");
